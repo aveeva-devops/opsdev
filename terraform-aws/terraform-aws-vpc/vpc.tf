@@ -8,6 +8,9 @@ resource "aws_vpc" "default" {
 
 resource "aws_internet_gateway" "default" {
     vpc_id = "${aws_vpc.default.id}"
+      tags {
+        Name = "InternetGateway"
+    }
 }
 
 /*
@@ -101,6 +104,7 @@ resource "aws_subnet" "us-east-1a-public" {
     vpc_id = "${aws_vpc.default.id}"
 
     cidr_block = "${var.public_subnet_cidr}"
+    map_public_ip_on_launch = true
     availability_zone = "us-east-1a"
 
     tags {
