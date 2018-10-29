@@ -13,6 +13,4 @@
 * PIP
 * Conda
 * Ansible
-* Java
-* Ruby
 * Jenkins
