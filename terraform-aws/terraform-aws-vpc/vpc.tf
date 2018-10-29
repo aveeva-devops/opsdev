@@ -125,16 +125,18 @@ resource "aws_route_table" "us-east-1a-public" {
     }
 }
 
-resource "aws_route_table_association" "us-east-1a-public" {
-    subnet_id = "${aws_subnet.us-east-1a-public.id}"
-    route_table_id = "${aws_route_table.us-east-1a-public.id}"
-}
-
 resource "aws_route" "internet_access" {
   route_table_id         = "${aws_route_table.us-east-1a-public.id}"
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = "${aws_internet_gateway.gw.id}"
 }
+
+resource "aws_route_table_association" "us-east-1a-public" {
+    subnet_id = "${aws_subnet.us-east-1a-public.id}"
+    route_table_id = "${aws_route_table.us-east-1a-public.id}"
+}
+
+
 
 /*
   Private Subnet
