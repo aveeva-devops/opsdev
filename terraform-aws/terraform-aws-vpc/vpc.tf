@@ -130,6 +130,12 @@ resource "aws_route_table_association" "us-east-1a-public" {
     route_table_id = "${aws_route_table.us-east-1a-public.id}"
 }
 
+resource "aws_route" "internet_access" {
+  route_table_id         = "${aws_route_table.us-east-1a-public.id}"
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = "${aws_internet_gateway.gw.id}"
+}
+
 /*
   Private Subnet
 */
