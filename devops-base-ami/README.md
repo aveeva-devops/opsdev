@@ -1,6 +1,10 @@
 # devops
 
+This repo will help to build an immutable AWS AMI with Packer.
+Create an identical machine image from a single source
+
 ### Create DevOps Base AMI with below softwares
+
 * Docker
 * Python
 * PIP
