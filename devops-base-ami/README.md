@@ -13,6 +13,7 @@ Create an identical machine image from a single source
 * Jenkins
 
 ### Workflow - Image creation
+Automation of AMI Creation Using Packer
 
 ![Alt text](packer_workflow.PNG?raw=true "Title")
 
