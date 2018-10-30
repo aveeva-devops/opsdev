@@ -8,7 +8,6 @@ Create an identical machine image from a single source
 * Docker
 * Python
 * PIP
-* Conda
 * Ansible
 * Java
 * Jenkins
