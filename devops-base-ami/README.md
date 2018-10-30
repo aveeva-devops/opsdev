@@ -26,7 +26,7 @@ Create an identical machine image from a single source
 sudo pip install ansible
 ```
 ### Install docker
-* https://serverfault.com/questions/836198/how-to-install-docker-on-aws-ec2-instance-with-ami-ce-ee-update
+https://serverfault.com/questions/836198/how-to-install-docker-on-aws-ec2-instance-with-ami-ce-ee-update
 
 ```
 sudo yum install docker -y
@@ -42,7 +42,7 @@ sudo yum remove java-1.7.0-openjdk
 ```
 
 ### Install Jenkins
-* https://docs.aws.amazon.com/aws-technical-content/latest/jenkins-on-aws/installation.html
+https://docs.aws.amazon.com/aws-technical-content/latest/jenkins-on-aws/installation.html
 
 ```
 sudo yum update –y
