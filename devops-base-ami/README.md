@@ -1,6 +1,6 @@
 # devops
 
-### Workflow
+### Workflow - New Image Creation
 
 ![Alt text](packer_workflow.PNG?raw=true "Title")
 
