@@ -30,6 +30,14 @@ sudo yum install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 ```
+
+### Install Java 8
+
+```
+sudo yum install java-1.8.0
+sudo yum remove java-1.7.0-openjdk
+```
+
 ### Install Jenkins
 * https://docs.aws.amazon.com/aws-technical-content/latest/jenkins-on-aws/installation.html
 
