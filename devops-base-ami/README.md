@@ -1,13 +1,5 @@
 # devops
 
-### Workflow - New Image Creation
-
-![Alt text](packer_workflow.PNG?raw=true "Title")
-
-### This repository contains a [Terraform-aws] projects that builds 
-* Terraform-aws - Scenario 2: VPCwith Public and Private Subnets[scenario_two] from the [AWS documentation].
-* Refer AWS Documentation to understand VPC scenario 2 - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html
-
 ### Create DevOps Base AMI with below softwares
 * Docker
 * Python
@@ -16,6 +8,10 @@
 * Ansible
 * Java
 * Jenkins
+
+### Workflow - Image creation
+
+![Alt text](packer_workflow.PNG?raw=true "Title")
 
 ### Use AMI ID - ami-0ff8a91507f77f867. This AMI has below softwares
 * Python
